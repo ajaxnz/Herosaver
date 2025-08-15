@@ -31,6 +31,8 @@ You can also use the developer-console, if you like.
 // code-loader
 g = u => fetch(u || 'https://raw.githubusercontent.com/notnullgames/Herosaver/master/dist/herosaver.js').then(r => r.text()).then(eval)
 
+g = u => fetch(u || 'https://raw.githubusercontent.com/ajaxnz/Herosaver/master/dist/herosaver.js').then(r => r.text()).then(eval)
+
 // get STL file
 g().then(() => saveStl())
 
