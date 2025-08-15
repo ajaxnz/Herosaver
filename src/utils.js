@@ -1,7 +1,7 @@
 // this stuff is all basically from original
 
 import { MeshBasicMaterial, Group, Mesh, Matrix4, Vector3, Vector4 } from 'three'
-import { SubdivisionModifier } from 'three/examples/jsm/modifiers/SubdivisionModifier.js'
+// import { SubdivisionModifier } from 'three/examples/jsm/modifiers/SubdivisionModifier.js'
 
 export const { character } = window.CK
 
