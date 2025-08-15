@@ -16,6 +16,13 @@ window.saveStl = subdivisions => {
   saveAs(new Blob([exporter.parse(group)], { type: 'application/sla;charset=utf-8' }), `${getName()}.stl`)
 }
 
+// export charaxter as STL bypassing processor to use raw stlexport
+window.saveStl2 = subdivisions => {
+  const group = character.caracter
+  const exporter = new STLExporter()
+  saveAs(new Blob([exporter.parse(group)], { type: 'application/sla;charset=utf-8' }), `${getName()}.stl`)
+}
+
 // export character as OBJ file
 window.saveObj = subdivisions => {
   const group = process(character, subdivisions, !!character.data.mirroredPose)
