@@ -18,7 +18,7 @@ window.saveStl = subdivisions => {
 
 // export charaxter as STL bypassing processor to use raw stlexport
 window.saveStl2 = subdivisions => {
-  const group = character.caracter
+  const group = character
   const exporter = new STLExporter()
   saveAs(new Blob([exporter.parse(group)], { type: 'application/sla;charset=utf-8' }), `${getName()}.stl`)
 }
